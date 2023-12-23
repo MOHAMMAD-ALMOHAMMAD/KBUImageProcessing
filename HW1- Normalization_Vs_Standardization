@@ -1,0 +1,16 @@
+Normalization and standardization are two commonly used techniques in data preprocessing, particularly in the field of machine learning and statistics. Both methods are used to scale the features (variables) so that they can be compared on common grounds, but they do so in different ways. Here are the key differences between normalization and standardization:
+
+Normalization:
+1. Normalization, also known as min-max scaling, rescales the feature to a fixed range, usually 0 to 1, or -1 to 1.
+2. The formula for normalization is: (X - X_min) / (X_max - X_min), where X is the original value, X_min is the minimum value in the feature, and X_max is the maximum value.
+3. Normalization is sensitive to outliers since the minimum and maximum values are used for scaling.
+4. It preserves the original distribution of scores (except for the scale).
+5. Normalization is useful when you know the approximate minimum and maximum values of the dataset.
+
+Standardization:
+1. Standardization, also known as Z-score normalization, rescales the feature so that it has a mean of 0 and a standard deviation of 1.
+2. The formula for standardization is: (X - μ) / σ, where X is the original value, μ is the mean of the feature, and σ is the standard deviation.
+3. Standardization is less sensitive to outliers since it is based on the mean and standard deviation.
+4. It transforms the data to fit a Gaussian distribution (normal distribution) with a mean of 0 and a standard deviation of 1, changing the original distribution of scores.
+5. Standardization does not have a bounded range, and it's useful when you do not know the minimum and maximum values of the dataset or when you are dealing with features with high variance.
+
